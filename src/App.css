@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation-ul {
   display: flex;
-  flex-direction: column;
+  list-style-type: none;
+  background-color: black;
+  min-height: 45px;
+}
+
+.navigation-ul-2 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+
+  /* list-style-type: none; */
+  background-color: rgb(161, 161, 27);
+  min-height: 45px;
+}
+
+.active {
+  background-color: rgb(161, 161, 27);
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  padding: 0 15px;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card2 {
+  text-align: right;
+}
+
+.card img {
+  width: 100%;
+}
+
+.column {
+  padding: 9px 10px;
+}
+
+button {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.card2 {
+  width: 100%;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup img {
+  width: 100%;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: static;
+  top: 100px;
+  right: 5x;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: royalblue;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
 }
