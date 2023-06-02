@@ -1,6 +1,6 @@
 import React from "react";
-import { Players } from "../shared/ListOfPlayers";
 import { useState } from "react";
+import { Players } from "../shared/ListOfPlayers";
 export default function PlayersVN() {
   const [player, setPlayer] = useState([]);
   return (
