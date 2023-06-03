@@ -1,5 +1,5 @@
 import React from "react";
-import { Component } from "@angular/core";
+import { Component } from "react";
 export default class PlayersVN extends Component {
   render() {
     return (
